@@ -140,7 +140,7 @@ define([
                 var d = new Date().getTime();
                 if (d - ni.time < 60 * 1000) { // One minute
                     s.eVar24 = ni.pageName;
-                    s.eVar37 = ni.tag;
+                    s.eVar37 = ni.pageName + ':' + ni.tag;
                     s.events = s.apl(s.events,'event37',',');
                 }
                 localStorage.removeItem('gu.analytics.referrerVars');
